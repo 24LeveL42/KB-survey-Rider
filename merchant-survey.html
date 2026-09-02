@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Home-Based Food Business in Singapore — Quick Survey</title>
+<style>
+  :root {
+    --ink: #1F2430;
+    --ink-soft: #5B6272;
+    --bg: #F7F7F5;
+    --card: #FFFFFF;
+    --line: #E3E1DC;
+    --accent: #3B5BA5;
+    --accent-soft: #EAF0FB;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.5;
+  }
+  .wrap { max-width: 560px; margin: 0 auto; padding: 28px 20px 100px; }
+  header { margin-bottom: 28px; }
+  h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 24px;
+    line-height: 1.3;
+    margin: 0 0 10px;
+  }
+  .sub { color: var(--ink-soft); font-size: 14px; }
+  .note {
+    margin-top: 14px;
+    padding: 12px 14px;
+    background: var(--accent-soft);
+    border-radius: 10px;
+    font-size: 13px;
+    color: var(--ink);
+  }
+  fieldset {
+    border: none;
+    margin: 0 0 22px;
+    padding: 18px 18px 16px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+  }
+  legend {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0 4px;
+    margin-bottom: 4px;
+  }
+  .required { color: var(--accent); }
+  .options { margin-top: 10px; }
+  label.choice {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 0;
+    font-size: 14.5px;
+    cursor: pointer;
+  }
+  label.choice input { width: 17px; height: 17px; accent-color: var(--accent); }
+  .scale-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    gap: 4px;
+  }
+  .scale-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    flex: 1;
+    font-size: 11px;
+    color: var(--ink-soft);
+    text-align: center;
+  }
+  .scale-item input { width: 20px; height: 20px; accent-color: var(--accent); }
+  textarea {
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 14px;
+    resize: vertical;
+    min-height: 70px;
+  }
+  button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  button[type="submit"]:disabled { opacity: .6; }
+  #done {
+    display: none;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  #done h2 { font-family: Georgia, serif; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Home-Based Food Business in Singapore</h1>
+    <p class="sub">A short, independent research survey. Takes under 2 minutes.</p>
+    <p class="note">This survey is completely anonymous — no name, phone number, or contact details are collected. Your answers are used only for research purposes.</p>
+  </header>
+
+  <form id="surveyForm">
+
+    <fieldset>
+      <legend>1. Do you currently sell food from home, a stall, or a small shop? <span class="required">*</span></legend>
+      <div class="options">
+        <label class="choice"><input type="radio" name="q1" value="Yes, currently" required> Yes, currently</label>
+        <label class="choice"><input type="radio" name="q1" value="Yes, in the past"> Yes, in the past</label>
+        <label class="choice"><input type="radio" name="q1" value="No, but considering it"> No, but considering it</label>
+        <label class="choice"><input type="radio" name="q1" value="No"> No</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>2. Have you sold food through a delivery platform (Grab, Foodpanda, etc.)?</legend>
+      <div class="options">
+        <label class="choice"><input type="radio" name="q2" value="Yes, currently"> Yes, currently</label>
+        <label class="choice"><input type="radio" name="q2" value="Yes, in the past"> Yes, in the past</label>
+        <label class="choice"><input type="radio" name="q2" value="No, never"> No, never</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>3. Commission fees from delivery platforms are a major cost that eats into my profit.</legend>
+      <div class="scale-row">
+        <div class="scale-item"><input type="radio" name="q3" value="1"><span>Strongly<br>Disagree</span></div>
+        <div class="scale-item"><input type="radio" name="q3" value="2"><span>Disagree</span></div>
+        <div class="scale-item"><input type="radio" name="q3" value="3"><span>Neutral</span></div>
+        <div class="scale-item"><input type="radio" name="q3" value="4"><span>Agree</span></div>
+        <div class="scale-item"><input type="radio" name="q3" value="5"><span>Strongly<br>Agree</span></div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>4. I would prefer paying one flat monthly subscription fee over a percentage commission per order.</legend>
+      <div class="scale-row">
+        <div class="scale-item"><input type="radio" name="q4" value="1"><span>Strongly<br>Disagree</span></div>
+        <div class="scale-item"><input type="radio" name="q4" value="2"><span>Disagree</span></div>
+        <div class="scale-item"><input type="radio" name="q4" value="3"><span>Neutral</span></div>
+        <div class="scale-item"><input type="radio" name="q4" value="4"><span>Agree</span></div>
+        <div class="scale-item"><input type="radio" name="q4" value="5"><span>Strongly<br>Agree</span></div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>5. A monthly subscription of $20–25 for zero commission on all my orders would feel fair to me.</legend>
+      <div class="scale-row">
+        <div class="scale-item"><input type="radio" name="q5" value="1"><span>Strongly<br>Disagree</span></div>
+        <div class="scale-item"><input type="radio" name="q5" value="2"><span>Disagree</span></div>
+        <div class="scale-item"><input type="radio" name="q5" value="3"><span>Neutral</span></div>
+        <div class="scale-item"><input type="radio" name="q5" value="4"><span>Agree</span></div>
+        <div class="scale-item"><input type="radio" name="q5" value="5"><span>Strongly<br>Agree</span></div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>6. I would be comfortable choosing my own delivery helper for each order, rather than one auto-assigned.</legend>
+      <div class="scale-row">
+        <div class="scale-item"><input type="radio" name="q6" value="1"><span>Strongly<br>Disagree</span></div>
+        <div class="scale-item"><input type="radio" name="q6" value="2"><span>Disagree</span></div>
+        <div class="scale-item"><input type="radio" name="q6" value="3"><span>Neutral</span></div>
+        <div class="scale-item"><input type="radio" name="q6" value="4"><span>Agree</span></div>
+        <div class="scale-item"><input type="radio" name="q6" value="5"><span>Strongly<br>Agree</span></div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>7. Setting my own refund/dispute policy (vs. one fixed platform-wide rule) would give me more confidence.</legend>
+      <div class="scale-row">
+        <div class="scale-item"><input type="radio" name="q7" value="1"><span>Strongly<br>Disagree</span></div>
+        <div class="scale-item"><input type="radio" name="q7" value="2"><span>Disagree</span></div>
+        <div class="scale-item"><input type="radio" name="q7" value="3"><span>Neutral</span></div>
+        <div class="scale-item"><input type="radio" name="q7" value="4"><span>Agree</span></div>
+        <div class="scale-item"><input type="radio" name="q7" value="5"><span>Strongly<br>Agree</span></div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>8. Reaching more customers is currently harder for me than the cost of commission fees.</legend>
+      <div class="scale-row">
+        <div class="scale-item"><input type="radio" name="q8" value="1"><span>Strongly<br>Disagree</span></div>
+        <div class="scale-item"><input type="radio" name="q8" value="2"><span>Disagree</span></div>
+        <div class="scale-item"><input type="radio" name="q8" value="3"><span>Neutral</span></div>
+        <div class="scale-item"><input type="radio" name="q8" value="4"><span>Agree</span></div>
+        <div class="scale-item"><input type="radio" name="q8" value="5"><span>Strongly<br>Agree</span></div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>9. What's the #1 thing that would help you sell more food right now? (optional)</legend>
+      <textarea name="q9" placeholder="Your thoughts..."></textarea>
+    </fieldset>
+
+    <button type="submit" id="submitBtn">Submit</button>
+  </form>
+
+  <div id="done">
+    <h2>Thank you 🙏</h2>
+    <p>Your response has been recorded anonymously.</p>
+  </div>
+
+</div>
+
+<script>
+  // Replace this with your own Google Apps Script Web App URL after deploying it.
+  const SCRIPT_URL = "PASTE_YOUR_APPS_SCRIPT_URL_HERE";
+
+  const form = document.getElementById("surveyForm");
+  const btn = document.getElementById("submitBtn");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    btn.disabled = true;
+    btn.textContent = "Submitting...";
+
+    const formData = new FormData(form);
+    const payload = { surveyType: "merchant" };
+    for (const [key, value] of formData.entries()) {
+      payload[key] = value;
+    }
+
+    fetch(SCRIPT_URL, {
+      method: "POST",
+      mode: "no-cors",
+      headers: { "Content-Type": "text/plain;charset=utf-8" },
+      body: JSON.stringify(payload),
+    }).then(function () {
+      form.style.display = "none";
+      document.getElementById("done").style.display = "block";
+    }).catch(function () {
+      alert("Something went wrong submitting your response. Please try again.");
+      btn.disabled = false;
+      btn.textContent = "Submit";
+    });
+  });
+</script>
+
+</body>
+</html>
